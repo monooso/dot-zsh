@@ -1,8 +1,10 @@
-#! /bin/zsh
+#! /bin/bash
+
+# Load the .aliases file
+test -f ~/.aliases && source ~/.aliases
 
 # Load the .zshrc.d/* config files
-setopt extended_glob
-for config in ~/.zshrc.d/*[^~]; do
+for config in ~/.zshrc.d/*.zsh; do
     source $config
 done
 
