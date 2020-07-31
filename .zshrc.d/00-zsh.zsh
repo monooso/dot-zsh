@@ -27,7 +27,7 @@ parse_git_branch () {
 set_prompt() {
   export PROMPT="
 %{$fg[green]%}%~%{$fg[yellow]%}$(parse_git_branch)%{$reset_color%}
-$ "
+→ "
 }
 
 # Set the right-hand side prompt
