@@ -1,2 +1,2 @@
 # Load ASDF
-. $(brew --prefix asdf)/asdf.sh
+source $(brew --prefix asdf)/asdf.sh > /dev/null
