@@ -4,6 +4,9 @@
 # VIM ALL THE THINGS
 bindkey -v
 
+# Enable the standard bash shortcut to search history
+bindkey "^R" history-incremental-pattern-search-backward
+
 # Make the zsh cache directory.
 zsh_cache=${HOME}/.zsh-cache
 mkdir -p $zsh_cache
