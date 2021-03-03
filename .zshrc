@@ -10,3 +10,6 @@ done
 
 # Load the local config overrides, if they exist
 test -f ~/.zshrc.local && source ~/.zshrc.local
+
+# Load the FZF config, if it exists
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
