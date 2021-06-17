@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Load antigen
+source $(brew --prefix)/share/antigen/antigen.zsh
+
 # Load the .aliases file
 test -f ~/.aliases && source ~/.aliases
 
@@ -13,3 +16,6 @@ test -f ~/.zshrc.local && source ~/.zshrc.local
 
 # Load the FZF config, if it exists
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Apply any antigen bundles
+antigen apply

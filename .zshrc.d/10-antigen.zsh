@@ -1,4 +1,6 @@
-# ------------------------------------------------
-# Source antigen before adding bundles separately
-# ------------------------------------------------
-source $(brew --prefix)/share/antigen/antigen.zsh
+# ................................................
+# Declare the ZSH antigen bundles
+# ................................................
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
