@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Load antigen
-source $(brew --prefix)/share/antigen/antigen.zsh
+source $HOME/antigen.zsh
 
 # Load the .aliases file
 test -f ~/.aliases && source ~/.aliases
