@@ -29,7 +29,8 @@ parse_git_branch () {
 # Set the prompt
 set_prompt() {
   export PROMPT="
-%{$fg[green]%}%~%{$fg[yellow]%}$(parse_git_branch)%{$reset_color%}
+%F{245}%n@%m%{$reset_color%}
+%F{green}%~%F{yellow}$(parse_git_branch)%{$reset_color%}
 → "
 }
 
