@@ -8,25 +8,13 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias c='clear'
-alias did='history'
-alias didi='history | fzf'
+alias l='ls -lah'
 
 # -----------------------------------------------------------------------------
-# GRC overrides for ls
-# @see `brew install coreutils`
+# Oddments
+# Nowhere better to put these at present
 # -----------------------------------------------------------------------------
-if $(gls &>/dev/null); then
-  alias l='gls --almost-all --classify --color --format=verbose --group-directories-first --human-readable'
-  alias ls='gls --almost-all --classify --color --group-directories-first'
-else
-  alias l='ls -lah'
-fi
-
-# -----------------------------------------------------------------------------
-# Homebrew
-# -----------------------------------------------------------------------------
-alias bud='brew update'
-alias bug='brew upgrade'
+alias no='cd ~/Dropbox/00-notes && nvim'
 
 # -----------------------------------------------------------------------------
 # Load additional aliases from ~/.aliases.d
@@ -37,5 +25,6 @@ done
 
 # -----------------------------------------------------------------------------
 # Load any local aliases
+# Primarily for short-lived or sensitive aliases
 # -----------------------------------------------------------------------------
 test -f ~/.aliases.local && source ~/.aliases.local
