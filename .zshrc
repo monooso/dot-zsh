@@ -17,5 +17,8 @@ test -f ~/.zshrc.local && source ~/.zshrc.local
 # Load the FZF config, if it exists
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Load direnv, if it exists
+command -v direnv >/dev/null 2>&1 && eval "$(direnv hook zsh)"
+
 # Apply any antigen bundles
 antigen apply
